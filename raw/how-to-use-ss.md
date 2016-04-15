@@ -12,6 +12,8 @@ category: 使用教程
 
 ## Windows
 
+**感谢 [4770K](https://twitter.com/XeoXoe) 提供 Windows 下的教程**
+
 首先从[客户端下载页](https://wiki.ssladder.com/page/download/#Shadowsocks客户端_(全平台_支持路由器_手机用户强烈推荐)) 下载好 Shadowsocks-x.x.zip
 
 解压到自己选择的目录中【建议创建一个新文件夹将 Shadowsocks-x.x.zip 里的 .exe 解压进去】
