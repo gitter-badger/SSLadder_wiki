@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Frank">
+    <meta name="description" content="SSLadder Knowledge Base">
+    <title>
+                如何在各大平台配置 SSLadder? - SSLadder 知识库            </title>
+    <link href="/assets/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/assets/style.css" rel="stylesheet"/>
+    <script src="/assets/highlight.min.js"></script>
+    <base target="_blank">
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+                <h1><a href="/" class="logo-text" target="_self">SSLadder 知识库</a>&nbsp;
+                        <small>/ 如何在各大平台配置 SSLadder?</small>
+                    </h1>
+            </div>
+<div class="row">
+<!-- two columns -->
+<div class="col-lg-3 col-md-3">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">About</h3>
+    </div>
+    <div class="panel-body">
+        <p>This is a simple Aboutme widget.</p>
+        <p>Author: <b>Frank</b></p>
+    </div>
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Navigation</h3>
+    </div>
+    <div class="panel-body">
+        <h6><a href="/" target="_self">Homepage</a></h6>
+                <h5>客户端</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/download/" target="_self">
+                                        客户端下载                                    </a>
+            </li>
+                    </ul>
+                <h5>软件教程</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/dropbox/" target="_self">
+                                        如何搭配 SSLadder 使用 Dropbox 客户端( PC / Mac )                                    </a>
+            </li>
+                    </ul>
+                <h5>SSLadder</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/how-to-choose/" target="_self">
+                                        如何选择连接方式                                    </a>
+            </li>
+                        <li>
+                <a href="/page/what-is-ssladder/" target="_self">
+                                        什么是 SSLadder ?                                    </a>
+            </li>
+                    </ul>
+                <h5>使用教程</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/how-to-use-ss/" target="_self">
+                                        如何在各大系统配置 Shadowsocks ?                                    </a>
+            </li>
+                        <li>
+                <a href="/page/how-to-use-ssladder/" target="_self">
+                                        如何在各大平台配置 SSLadder?                                    </a>
+            </li>
+                    </ul>
+                <h5>使用故障</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/korean-issue/" target="_self">
+                                        正在使用韩国节点，为什么突然出现KCSC Warning? 为什么看视频需要韩国手机认证？                                    </a>
+            </li>
+                        <li>
+                <a href="/page/troubleshooting/" target="_self">
+                                        无法使用 SSLadder ,如何排除网络故障?                                    </a>
+            </li>
+                    </ul>
+                    </div>
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12">
+<div class="index-content">
+<div class="row">
+<span class="label label-primary pull-right">使用教程</span>
+</div>
+<div class="row">
+<h1><a href="#配置准备" name="配置准备" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;配置准备</h1>
+<p>首先，请在 <a href="https://wiki.ssladder.com/page/download/">客户端下载</a> 下载对应平台的 SSLadder 的插件</p>
+<p>快速导航: <a href="#Chrome">Chrome 浏览器</a> <a href="#Firefox">火狐浏览器</a> <a href="#iOS">iOS</a></p>
+<h1><a href="#本教程适用于" name="本教程适用于" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;本教程适用于</h1>
+<p>Windows 桌面 + Mac OS X + Linux 系统 搭配 <a href="#Chrome">Chrome 浏览器</a> 或 火狐浏览器</p>
+<p>苹果的 iOS 搭配 Surge</p>
+<h1><a href="#各大平台的配置教程" name="各大平台的配置教程" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;各大平台的配置教程</h1>
+<h2><a href="#Chrome" name="Chrome" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Chrome</h2>
+<p>本教程适用于: 全桌面平台的谷歌 Chrome 浏览器 （包括 Windows Mac OS X Linux Chromebook 本篇以 Mac OS X 下的 Chrome 浏览器为例)</p>
+<h3><a href="#Proxy_SwitchyOmega" name="Proxy_SwitchyOmega" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Proxy SwitchyOmega</h3>
+<p>首先你得安装好 谷歌浏览器 和 SwithcyOmega (方便 快捷 功能全面)</p>
+<p>首先你的下载好我们提前准备的好的 <code>设置文件</code> <a href="https://wiki.ssladder.com/assets/Omega_SSLadde.bak">下载链接</a>（省下配置过程中的很多麻烦)</p>
+<p>右键黑色小圈 点<code>选项</code>——<code>导入/导出</code>——<code>从备份文件恢复</code> 选择刚才下好的设置文件</p>
+<p><img src="https://ooo.0o0.ooo/2016/04/14/570fb93a74401.png" alt="屏幕截图 2016-04-14 23.31.39.png" /></p>
+<p>我们就能看到出现了一大堆的 <code>情景模式</code></p>
+<p>我们可以点击 <code>自动切换</code> 来设定自动切换到哪个节点</p>
+<p><img src="https://ooo.0o0.ooo/2016/04/14/570fb936d1cac.png" alt="屏幕截图 2016-04-14 23.32.37.png" /></p>
+<p>如果你嫌每次上网要输入密码 你还可以去预设好用户名和密码 这样就省下输入用户名和密码的功夫了</p>
+<p>找到你需要的情景模式 选择 <code>代理端口</code> 隔壁的 <code>锁头</code> 输入你的 SSLadder 用户名和密码 点击保存更改</p>
+<p><img src="https://ooo.0o0.ooo/2016/04/14/570fb936b8e5d.png" alt="屏幕截图 2016-04-14 23.32.27.png" /></p>
+<p>设置完成后 点黑色圈圈 选择自动切换</p>
+<p><img src="https://ooo.0o0.ooo/2016/04/14/570fbacf51be2.jpg" alt="截图 2016-04-14 23时40分31秒.jpg" /></p>
+<p>这样就大功告成了!</p>
+<h3><a href="#Falcon_Proxy" name="Falcon_Proxy" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Falcon Proxy</h3>
+<h2><a href="#Firefox" name="Firefox" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Firefox</h2>
+<p>Firefox 使用 PAC 接入</p>
+<h2><a href="#iOS" name="iOS" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;iOS</h2>
+<h3><a href="#Surge" name="Surge" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Surge</h3>
+<p><em>Last Update: Thu Apr 14 2016 23:48:44 GMT+0800 (CST)</em>  <a href="/raw/how-to-use-ssladder.md">Source File</a></p>
+</div>
+<div class="row">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'ssladderwiki';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+    <div class="footer-text">
+        <p>
+            SSLadder 知识库 using <a href="https://github.com/phoenixlzx/MinoriWiki" target="_blank">MinoriWiki</a>
+        </p>
+    </div>
+</div>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Frank">
+    <meta name="description" content="SSLadder Knowledge Base">
+    <title>
+                如何选择连接方式 - SSLadder 知识库            </title>
+    <link href="/assets/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/assets/style.css" rel="stylesheet"/>
+    <script src="/assets/highlight.min.js"></script>
+    <base target="_blank">
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+                <h1><a href="/" class="logo-text" target="_self">SSLadder 知识库</a>&nbsp;
+                        <small>/ 如何选择连接方式</small>
+                    </h1>
+            </div>
+<div class="row">
+<!-- two columns -->
+<div class="col-lg-3 col-md-3">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">About</h3>
+    </div>
+    <div class="panel-body">
+        <p>This is a simple Aboutme widget.</p>
+        <p>Author: <b>Frank</b></p>
+    </div>
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Navigation</h3>
+    </div>
+    <div class="panel-body">
+        <h6><a href="/" target="_self">Homepage</a></h6>
+                <h5>客户端</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/download/" target="_self">
+                                        客户端下载                                    </a>
+            </li>
+                    </ul>
+                <h5>软件教程</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/dropbox/" target="_self">
+                                        如何搭配 SSLadder 使用 Dropbox 客户端( PC / Mac )                                    </a>
+            </li>
+                    </ul>
+                <h5>SSLadder</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/how-to-choose/" target="_self">
+                                        如何选择连接方式                                    </a>
+            </li>
+                        <li>
+                <a href="/page/what-is-ssladder/" target="_self">
+                                        什么是 SSLadder ?                                    </a>
+            </li>
+                    </ul>
+                <h5>使用教程</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/how-to-use-ss/" target="_self">
+                                        如何在各大系统配置 Shadowsocks ?                                    </a>
+            </li>
+                        <li>
+                <a href="/page/how-to-use-ssladder/" target="_self">
+                                        如何在各大平台配置 SSLadder?                                    </a>
+            </li>
+                    </ul>
+                <h5>使用故障</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/korean-issue/" target="_self">
+                                        正在使用韩国节点，为什么突然出现KCSC Warning? 为什么看视频需要韩国手机认证？                                    </a>
+            </li>
+                        <li>
+                <a href="/page/troubleshooting/" target="_self">
+                                        无法使用 SSLadder ,如何排除网络故障?                                    </a>
+            </li>
+                    </ul>
+                    </div>
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12">
+<div class="index-content">
+<div class="row">
+<span class="label label-primary pull-right">SSLadder</span>
+</div>
+<div class="row">
+<p>第一次用 SSLadder 可能有些迷糊 因为我们提供<del>三种</del> 两种连接方式（目前仅支持 Shadowsocks 和 SSLadder 浏览器代理 Amyconnect 正在调试)</p>
+<p>其实这主要是个人的选择问题</p>
+<h1><a href="#对于_PC_/_Mac_/_Linux_/_Chromebook_用户" name="对于_PC_/_Mac_/_Linux_/_Chromebook_用户" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;对于 PC / Mac / Linux / Chromebook 用户</h1>
+<p>如果你只是用浏览器上上网，或者你用的是 Chromebook 可以使用 SSLadder 浏览器代理</p>
+<p>当然 如果你需要系统级支持（比如 GTA Online 联机）和追求稳定性 请选择 <code>Shadowsocks</code></p>
+<h1><a href="#路由器用户" name="路由器用户" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;路由器用户</h1>
+<p><code>Shadowsocks</code></p>
+<h1><a href="#对于_iOS_/_Android_/_路由器_用户" name="对于_iOS_/_Android_/_路由器_用户" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;对于 iOS / Android / 路由器 用户</h1>
+<p>我们更推荐在手机和路由器这类设备上上用 <code>Shadowsocks</code></p>
+<p>因为 <code>SSLadder 浏览器代理</code>是 <code>AES</code> 加密. 在移动设备上 AES 的解密速度不如谷歌的 <code>CHACHA20</code> 算法</p>
+<p>而 <code>Shadowsocks</code> 方面 我们有 <code>CHACHA20</code> 服务器 在 ARM 和 MIPS 设备上 解密速度比 AES 快（在电脑上相反 电脑 CPU 有 AES 解密指令集）</p>
+<p>还有一点 <code>SSLadder 浏览器代理</code> 在移动平台上比较少应用 文档少 (大神级别才玩得起) 支持这种方式的 App 也少（目前已知 iOS 的 Surge 支持 SSLadder 浏览器代理)</p>
+<p><em>Last Update: Sun Apr 10 2016 12:29:30 GMT+0800 (CST)</em>  <a href="/raw/how-to-choose.md">Source File</a></p>
+</div>
+<div class="row">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'ssladderwiki';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+    <div class="footer-text">
+        <p>
+            SSLadder 知识库 using <a href="https://github.com/phoenixlzx/MinoriWiki" target="_blank">MinoriWiki</a>
+        </p>
+    </div>
+</div>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
