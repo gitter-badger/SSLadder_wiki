@@ -4,7 +4,7 @@ category: 使用教程
 
 # 配置准备
 
-首先，请在 [客户端下载](https://wiki.SSLadder BSP.com/page/download/) 下载对应平台的 SSLadder BSP 的插件
+首先，请在 [客户端下载](/page/download/) 下载对应平台的 SSLadder BSP 的插件
 
 快速导航: [Chrome浏览器](#Chrome) [火狐浏览器](#Firefox) [iOS](#iOS)
 
