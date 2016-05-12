@@ -1,9 +1,9 @@
-title: 如何在各大系统配置 思科 Anyconnect
+title: 如何在各大系统配置AnyConnect
 category: 使用教程
 ---
 ## 前言
 
-*因为Anyconnect的协议缺陷，Anyconnect速度和稳定性并没有Shadowsocks好 我们推荐用户升级设备系统到 Android 4.1 / iOS9.0以上并使用Shadowsocks的客户端*
+*因为AnyConnect的协议缺陷，AnyConnect速度和稳定性并没有Shadowsocks好 我们推荐用户升级设备系统到 Android 4.1 / iOS9.0以上并使用Shadowsocks的客户端*
 
 随着Google 和 Apple 先后在自家系统添加了系统级VPN应用的API（Android 4.1+ 添加了[VPNService](http://developer.android.com/reference/android/net/VpnService.html) API , iOS 9+添加了[Network Extension](https://developer.apple.com/library/ios/documentation/NetworkExtension/Reference/Network_Extension_Framework_Reference/) 的系统级API),许多人的 Shadowsocks 科学上网的需求被系统级API解决,再也不需要Root和越狱自己心爱的设备了 
 
@@ -13,15 +13,15 @@ category: 使用教程
 
 
 
-Anyconnect就是救星!
+AnyConnect就是救星!
 
 
 
-**提醒:我们并不推荐在有Shadowsocks解决方案的情况下使用Anyconnect**
+**提醒:我们并不推荐在有Shadowsocks解决方案的情况下使用AnyConnect**
 
 # 配置准备
 
-首先，请在 [客户端下载](https://wiki.Anyconnect.com/page/download/) 下载对应平台的 Anyconnect 的客户端
+首先，请在 [客户端下载](https://wiki.AnyConnect.com/page/download/) 下载对应平台的 AnyConnect 的客户端
 
 教程快速导航: [Windows 和 Mac OS X](#Desktop) / [Windows Phone](#Windows Phone) / [iOS](#iOS)
 
@@ -35,11 +35,29 @@ Windows PC+ Mac OS X + Windows Phone + iOS
 
 本教程适用于: Windows 和 Mac OS X 系统
 
-由于Windows和Mac版Anyconnect相似度很高(几乎同一个界面) 
+由于Windows和Mac版AnyConnect相似度很高(几乎同一个界面) 
 
-所以本文以Mac OS X El Capitan下的Anyconnect为例
+所以本文以Mac OS X El Capitan下的AnyConnect为例
 
-偷懒 以后再写
+首先你得安装好AnyConnect的客户端
+
+然后打开AnyConnect
+
+出现如下界面
+
+![屏幕截图 2016-05-12 22.56.33.png](https://ooo.0o0.ooo/2016/05/12/57349ab51df0b.png)
+
+输入地址和端口 格式如 ac-jp1.ssladder.com
+
+如果你的PC/Mac和服务器通信成功 会提示输入用户名和密码认证
+
+![Username](https://ooo.0o0.ooo/2016/05/12/57349a43cbb3d.png) ![Password](https://ooo.0o0.ooo/2016/05/12/57349a43cb69a.png)
+
+如果用户名和密码和我们的认证系统中存储的信息相符  AnyConnect将会连接成功 并自动藏到后台里
+
+你可以点击AnyConnect图标查看当前连接状态
+
+![Status](https://ooo.0o0.ooo/2016/05/12/57349a447dea3.png)
 
 ## Windows Phone
 
@@ -49,7 +67,7 @@ Windows PC+ Mac OS X + Windows Phone + iOS
 
 *本教程仅建议iOS 8用户使用,iOS 9用户请用更简单的Shadowrocket*
 
-首先，从 [App Store](https://itunes.apple.com/cn/app/cisco-anyconnect/id392790924?mt=8) 下载 Anyconnect
+首先，从 [App Store](https://itunes.apple.com/cn/app/cisco-anyconnect/id392790924?mt=8) 下载 AnyConnect
 
 下载完成后 在桌面上找到AnyConnect
 
@@ -58,7 +76,7 @@ Windows PC+ Mac OS X + Windows Phone + iOS
 
 
 
-打开Anyconnect,点击 `连接`
+打开AnyConnect,点击 `连接`
 
 ![IMG_1405.PNG](https://ooo.0o0.ooo/2016/05/12/57341beb3cfbe.png)
 

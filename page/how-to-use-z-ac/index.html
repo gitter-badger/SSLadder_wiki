@@ -7,7 +7,7 @@
     <meta name="author" content="Frank">
     <meta name="description" content="SSLadder Knowledge Base">
     <title>
-                如何在各大系统配置 思科 Anyconnect - SSLadder 知识库            </title>
+                如何在各大系统配置AnyConnect - SSLadder 知识库            </title>
     <link href="/assets/bootstrap.min.css" rel="stylesheet"/>
     <link href="/assets/style.css" rel="stylesheet"/>
     <script src="/assets/highlight.min.js"></script>
@@ -17,7 +17,7 @@
 <div class="container">
     <div class="page-header">
                 <h1><a href="/" class="logo-text" target="_self">SSLadder 知识库</a>&nbsp;
-                        <small>/ 如何在各大系统配置 思科 Anyconnect</small>
+                        <small>/ 如何在各大系统配置AnyConnect</small>
                     </h1>
             </div>
 <div class="row">
@@ -29,13 +29,6 @@
     </div>
     <div class="panel-body">
         <h6><a href="/" target="_self">返回知识库首页</a></h6>
-                <h5>客户端</h5>
-        <ul class="list-unstyled">
-                        <li>
-                <a href="/page/download/" target="_self">
-                                        客户端下载                                    </a>
-            </li>
-                    </ul>
                 <h5>软件教程</h5>
         <ul class="list-unstyled">
                         <li>
@@ -43,15 +36,11 @@
                                         如何搭配 Shadowsocks 使用 Dropbox 客户端( PC / Mac )                                    </a>
             </li>
                     </ul>
-                <h5>SSLadder</h5>
+                <h5>客户端</h5>
         <ul class="list-unstyled">
                         <li>
-                <a href="/page/how-to-choose/" target="_self">
-                                        如何选择连接方式                                    </a>
-            </li>
-                        <li>
-                <a href="/page/what-is-ssladder/" target="_self">
-                                        什么是 SSLadder ?                                    </a>
+                <a href="/page/download/" target="_self">
+                                        客户端下载                                    </a>
             </li>
                     </ul>
                 <h5>使用教程</h5>
@@ -66,7 +55,18 @@
             </li>
                         <li>
                 <a href="/page/how-to-use-z-ac/" target="_self">
-                                        如何在各大系统配置 思科 Anyconnect                                    </a>
+                                        如何在各大系统配置AnyConnect                                    </a>
+            </li>
+                    </ul>
+                <h5>SSLadder</h5>
+        <ul class="list-unstyled">
+                        <li>
+                <a href="/page/how-to-choose/" target="_self">
+                                        如何选择连接方式                                    </a>
+            </li>
+                        <li>
+                <a href="/page/what-is-ssladder/" target="_self">
+                                        什么是 SSLadder ?                                    </a>
             </li>
                     </ul>
                 <h5>使用故障</h5>
@@ -90,30 +90,39 @@
 </div>
 <div class="row">
 <h2><a href="#前言" name="前言" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;前言</h2>
-<p><em>因为 Anyconnect 的协议缺陷，Anyconnect 速度和稳定性并没有 Shadowsocks 好 我们推荐用户升级设备系统到 Android 4.1 / iOS9.0 以上并使用 Shadowsocks 的客户端</em></p>
+<p><em>因为 AnyConnect 的协议缺陷，AnyConnect 速度和稳定性并没有 Shadowsocks 好 我们推荐用户升级设备系统到 Android 4.1 / iOS9.0 以上并使用 Shadowsocks 的客户端</em></p>
 <p>随着 Google 和 Apple 先后在自家系统添加了系统级 VPN 应用的 API（Android 4.1+ 添加了<a href="http://developer.android.com/reference/android/net/VpnService.html">VPNService</a> API , iOS 9 + 添加了<a href="https://developer.apple.com/library/ios/documentation/NetworkExtension/Reference/Network_Extension_Framework_Reference/">Network Extension</a> 的系统级 API), 许多人的 Shadowsocks 科学上网的需求被系统级 API 解决, 再也不需要 Root 和越狱自己心爱的设备了</p>
 <p>但是老设备、老系统或者系统不支持 Shadowsocks 怎么办?</p>
-<p>Anyconnect 就是救星!</p>
-<p><strong>提醒: 我们并不推荐在有 Shadowsocks 解决方案的情况下使用 Anyconnect</strong></p>
+<p>AnyConnect 就是救星!</p>
+<p><strong>提醒: 我们并不推荐在有 Shadowsocks 解决方案的情况下使用 AnyConnect</strong></p>
 <h1><a href="#配置准备" name="配置准备" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;配置准备</h1>
-<p>首先，请在 <a href="https://wiki.Anyconnect.com/page/download/">客户端下载</a> 下载对应平台的 Anyconnect 的客户端</p>
+<p>首先，请在 <a href="https://wiki.AnyConnect.com/page/download/">客户端下载</a> 下载对应平台的 AnyConnect 的客户端</p>
 <p>教程快速导航: <a href="#Desktop">Windows 和 Mac OS X</a> / [Windows Phone](#Windows Phone) / <a href="#iOS">iOS</a></p>
 <h1><a href="#本教程适用于" name="本教程适用于" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;本教程适用于</h1>
 <p>Windows PC+ Mac OS X + Windows Phone + iOS</p>
 <h1><a href="#各大平台的配置教程" name="各大平台的配置教程" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;各大平台的配置教程</h1>
 <h2><a href="#Desktop" name="Desktop" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Desktop</h2>
 <p>本教程适用于: Windows 和 Mac OS X 系统</p>
-<p>由于 Windows 和 Mac 版 Anyconnect 相似度很高 (几乎同一个界面)</p>
-<p>所以本文以 Mac OS X El Capitan 下的 Anyconnect 为例</p>
-<p>偷懒 以后再写</p>
+<p>由于 Windows 和 Mac 版 AnyConnect 相似度很高 (几乎同一个界面)</p>
+<p>所以本文以 Mac OS X El Capitan 下的 AnyConnect 为例</p>
+<p>首先你得安装好 AnyConnect 的客户端</p>
+<p>然后打开 AnyConnect</p>
+<p>出现如下界面</p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/57349ab51df0b.png" alt="屏幕截图 2016-05-12 22.56.33.png" /></p>
+<p>输入地址和端口 格式如 ac-jp1.ssladder.com</p>
+<p>如果你的 PC/Mac 和服务器通信成功 会提示输入用户名和密码认证</p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/57349a43cbb3d.png" alt="Username" /> <img src="https://ooo.0o0.ooo/2016/05/12/57349a43cb69a.png" alt="Password" /></p>
+<p>如果用户名和密码和我们的认证系统中存储的信息相符  AnyConnect 将会连接成功 并自动藏到后台里</p>
+<p>你可以点击 AnyConnect 图标查看当前连接状态</p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/57349a447dea3.png" alt="Status" /></p>
 <h2><a href="#Windows_Phone" name="Windows_Phone" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Windows Phone</h2>
 <p>我站首席软粉 Ray 正在努力写出</p>
 <h2><a href="#iOS" name="iOS" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;iOS</h2>
 <p><em>本教程仅建议 iOS 8 用户使用, iOS 9 用户请用更简单的 Shadowrocket</em></p>
-<p>首先，从 <a href="https://itunes.apple.com/cn/app/cisco-anyconnect/id392790924?mt=8">App Store</a> 下载 Anyconnect</p>
+<p>首先，从 <a href="https://itunes.apple.com/cn/app/cisco-anyconnect/id392790924?mt=8">App Store</a> 下载 AnyConnect</p>
 <p>下载完成后 在桌面上找到 AnyConnect</p>
 <p><img src="https://ooo.0o0.ooo/2016/05/12/57341875e2df2.png" alt="IMG_1415.PNG" /></p>
-<p>打开 Anyconnect, 点击 <code>连接</code></p>
+<p>打开 AnyConnect, 点击 <code>连接</code></p>
 <p><img src="https://ooo.0o0.ooo/2016/05/12/57341beb3cfbe.png" alt="IMG_1405.PNG" /></p>
 <p>选择<code>添加VPN连接</code></p>
 <p><img src="https://ooo.0o0.ooo/2016/05/12/573419b77b1f2.png" alt="IMG_1406.PNG" /></p>
@@ -133,7 +142,7 @@
 <p>如果用户名和密码正确无误 一会儿 你应该能够看到顶部多了个 &quot;VPN&quot; 的图标 详细信息也会显示已连接</p>
 <p><img src="https://ooo.0o0.ooo/2016/05/12/573419b7f29e3.png" alt="IMG_1412.PNG" /></p>
 <p>That's all!享受自由的互联网吧!</p>
-<p><em>Last Update: Thu May 12 2016 14:13:11 GMT+0800 (CST)</em>  <a href="/raw/how-to-use-z-ac.md">Source File</a></p>
+<p><em>Last Update: Thu May 12 2016 23:08:20 GMT+0800 (CST)</em>  <a href="/raw/how-to-use-z-ac.md">Source File</a></p>
 </div>
 <div class="row">
 <div id="disqus_thread"></div>
