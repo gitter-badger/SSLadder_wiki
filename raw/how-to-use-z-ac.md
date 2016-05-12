@@ -23,7 +23,7 @@ AnyConnect就是救星!
 
 首先，请在 [客户端下载](https://wiki.AnyConnect.com/page/download/) 下载对应平台的 AnyConnect 的客户端
 
-教程快速导航: [Windows 和 Mac OS X](#Desktop) / [Windows Phone](#Windows Phone) / [iOS](#iOS)
+教程快速导航: [Windows 和 Mac OS X](#Desktop) / [Windows Phone](#Windows_Phone) / [iOS](#iOS)
 
 # 本教程适用于
 
