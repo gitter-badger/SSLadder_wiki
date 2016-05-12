@@ -1,4 +1,4 @@
-title: 如何搭配 SSLadder 使用 Dropbox 客户端( PC / Mac )
+title: 如何搭配 Shadowsocks 使用 Dropbox 客户端( PC / Mac )
 category: 软件教程
 ---
 
