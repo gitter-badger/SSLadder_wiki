@@ -7,7 +7,7 @@
     <meta name="author" content="Frank">
     <meta name="description" content="SSLadder Knowledge Base">
     <title>
-                如何在各大系统配置 Shadowsocks ? - SSLadder 知识库            </title>
+                如何使用Anyconnect - SSLadder 知识库            </title>
     <link href="/assets/bootstrap.min.css" rel="stylesheet"/>
     <link href="/assets/style.css" rel="stylesheet"/>
     <script src="/assets/highlight.min.js"></script>
@@ -17,7 +17,7 @@
 <div class="container">
     <div class="page-header">
                 <h1><a href="/" class="logo-text" target="_self">SSLadder 知识库</a>&nbsp;
-                        <small>/ 如何在各大系统配置 Shadowsocks ?</small>
+                        <small>/ 如何使用Anyconnect</small>
                     </h1>
             </div>
 <div class="row">
@@ -89,53 +89,51 @@
 <span class="label label-primary pull-right">使用教程</span>
 </div>
 <div class="row">
+<h2><a href="#前言" name="前言" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;前言</h2>
+<p>随着 Google 和 Apple 先后在自家系统添加了系统级 VPN 应用的 API（Android 4.1+ 添加了<a href="http://developer.android.com/reference/android/net/VpnService.html">VPNService</a> API , iOS 9 + 添加了<a href="https://developer.apple.com/library/ios/documentation/NetworkExtension/Reference/Network_Extension_Framework_Reference/">Network Extension</a> 的系统级 API), 许多人的 Shadowsocks 科学上网的需求被系统级 API 解决, 再也不需要 Root 和越狱自己心爱的设备了</p>
+<p>但是老设备、老系统或者系统不支持 Shadowsocks 怎么办?</p>
+<p>Anyconnect 就是救星!</p>
+<p><strong>提醒: 我们并不推荐在有 Shadowsocks 解决方案的情况下使用 Anyconnect</strong></p>
+<p><strong>因为 Anyconnect 的协议缺陷，Anyconnect 速度和稳定性并没有 Shadowsocks 好 我们推荐用户升级设备系统到 Android 4.1 / iOS9.0 以上并使用 Shadowsocks 的客户端</strong></p>
 <h1><a href="#配置准备" name="配置准备" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;配置准备</h1>
-<p>首先，请在 <a href="https://wiki.ssladder.com/page/download/">客户端下载页</a> 下载对应系统的 <code>Shadowsocks</code> 客户端</p>
-<p>系统快速导航: <a href="#Windows">Windows</a> <a href="#Mac_OS_X">Mac OS X</a> <a href="#Chrome">Chrome 浏览器</a> <a href="#iOS">iOS</a> <a href="#Android">Android</a></p>
-<h1><a href="#Shadowsocks_各大系统的配置教程" name="Shadowsocks_各大系统的配置教程" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Shadowsocks 各大系统的配置教程</h1>
-<h2><a href="#Windows" name="Windows" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Windows</h2>
-<p><strong>感谢 <a href="https://twitter.com/XeoXoe">4770K</a> 提供 Windows 下的教程</strong></p>
-<p>首先从<a href="https://wiki.ssladder.com/page/download/#Shadowsocks客户端_(全平台_支持路由器_手机用户强烈推荐)">客户端下载页</a> 下载好 Shadowsocks-x.x.zip</p>
-<p>解压到自己选择的目录中【建议创建一个新文件夹将 Shadowsocks-x.x.zip 里的 .exe 解压进去】</p>
-<p>进入目录，双击运行 Shadowsocks.exe</p>
-<p>出现 Shadowsocks <code>服务器配置</code></p>
-<p><img src="https://ooo.0o0.ooo/2016/04/15/5710f6db5456d.png" alt="服务器配置图" /></p>
-<p>这时候一个灰色小飞机的图标会显示在你的右下角状态栏里</p>
-<p>按照示例图图中的提示填好自己的 Shadowsocks 连接信息</p>
-<p><img src="https://ooo.0o0.ooo/2016/04/15/5710f71cad301.png" alt="连接信息配置" /></p>
-<p>检查好<code>服务器地址</code> <code>端口</code> <code>加密方式</code> 和 <code>密码</code> 正确无误后 点击确定</p>
-<p>这样 Shadowsocks 的连接信息就算配置好了</p>
-<p>但这样还不够 我们还选择服务器和代理方式</p>
-<p>右击状态栏里的纸飞机 <code>服务器</code> —— 点击你需要连接的服务器</p>
-<p><img src="https://ooo.0o0.ooo/2016/04/15/5710f71d03bd2.png" alt="服务器" /></p>
-<p><code>系统代理模式</code> 可以选择 【全局代理】 或者 【PAC 模式】</p>
-<p><img src="https://ooo.0o0.ooo/2016/04/15/5710f71c8713f.png" alt="代理模式" /></p>
-<p>PAC 模式即选择性代理模式 通过目录下的 pac.txt 内容做出选择</p>
-<p><img src="https://ooo.0o0.ooo/2016/04/15/5710f71c3f952.png" alt="PAC" /></p>
-<p>然后就可以打开你的浏览器 享受自由的 真正的互联网了！！！</p>
-<p><img src="https://ooo.0o0.ooo/2016/04/15/5710f71d47ba3.png" alt="Wikipedia" /></p>
-<h2><a href="#Mac_OS_X" name="Mac_OS_X" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Mac OS X</h2>
-<p>首先从<a href="https://wiki.ssladder.com/page/download/#Shadowsocks客户端_(全平台_支持路由器_手机用户强烈推荐)">客户端下载页</a> 下载好 ShadowsocksX 并安装</p>
-<p>然后在 <code>Launchpad</code> 找到 <code>ShadowsocksX</code></p>
-<p>这时候一个小飞机的图标会显示在你的 OS X 顶部</p>
-<p>点击小飞机图标 选择 <code>服务器</code> —— <code>打开服务器设定</code></p>
-<p><img src="https://ooo.0o0.ooo/2016/04/14/570fafd83d60e.jpg" alt="打开服务器设定" /></p>
-<p>按照示例图图中的提示填好自己的 Shadowsocks 连接信息</p>
-<p><img src="https://ooo.0o0.ooo/2016/04/14/570fafd77034b.png" alt="配置" /></p>
-<p>检查好<code>服务器地址</code> <code>端口</code> <code>加密方式</code> 和 <code>密码</code> 正确无误后 点击确定</p>
-<p>这样 Shadowsocks 的连接信息就算配置好了</p>
-<p>但这样还不够 我们还选择服务器和代理方式</p>
-<p>再一次点击小飞机 <code>服务器</code> —— 点击你需要连接的服务器</p>
-<p>然后勾选代理设定 是全局代理还是自动代理 (仅对被墙网站走代理)</p>
-<p><img src="https://ooo.0o0.ooo/2016/04/14/570fafd868e03.jpg" alt="选择代理" /></p>
-<p>然后就可以打开你的浏览器 享受自由的 真正的互联网了！！！</p>
-<p><img src="https://ooo.0o0.ooo/2016/04/14/570fafd99e044.png" alt="维基百科 on Safari" /></p>
+<p>首先，请在 <a href="https://wiki.Anyconnect.com/page/download/">客户端下载</a> 下载对应平台的 Anyconnect 的客户端</p>
+<p>教程快速导航: <a href="#Desktop">Windows 和 Mac OS X</a> / [Windows Phone](#Windows Phone) / <a href="#iOS">iOS</a></p>
+<h1><a href="#本教程适用于" name="本教程适用于" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;本教程适用于</h1>
+<p>Windows PC+ Mac OS X + Windows Phone + iOS</p>
+<h1><a href="#各大平台的配置教程" name="各大平台的配置教程" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;各大平台的配置教程</h1>
+<h2><a href="#Desktop" name="Desktop" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Desktop</h2>
+<p>本教程适用于: Windows 和 Mac OS X 系统</p>
+<p>由于 Windows 和 Mac 版 Anyconnect 相似度很高 (几乎同一个界面)</p>
+<p>所以本文以 Mac OS X El Capitan 下的 Anyconnect 为例</p>
+<p>偷懒 以后再写</p>
+<h2><a href="#Windows_Phone" name="Windows_Phone" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Windows Phone</h2>
+<p>我站首席软粉 Ray 正在努力写出</p>
 <h2><a href="#iOS" name="iOS" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;iOS</h2>
-<h3><a href="#Shadowrocket" name="Shadowrocket" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Shadowrocket</h3>
-<h3><a href="#Surge" name="Surge" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Surge</h3>
-<h2><a href="#Android" name="Android" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Android</h2>
-<h2><a href="#Linux" name="Linux" target="_self" class="anchor"><span class="header-link">#</span></a>&nbsp;Linux</h2>
-<p><em>Last Update: Fri Apr 15 2016 22:28:07 GMT+0800 (CST)</em>  <a href="/raw/how-to-use-ss.md">Source File</a></p>
+<p><em>本教程仅建议 iOS 8 用户使用, iOS 9 用户请用更简单的 Shadowrocket</em></p>
+<p>首先，从 <a href="https://itunes.apple.com/cn/app/cisco-anyconnect/id392790924?mt=8">App Store</a> 下载 Anyconnect</p>
+<p>下载完成后 在桌面上找到 AnyConnect</p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/57341875e2df2.png" alt="IMG_1415.PNG" /></p>
+<p>打开 Anyconnect, 点击 <code>连接</code></p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/57341beb3cfbe.png" alt="IMG_1405.PNG" /></p>
+<p>选择<code>添加VPN连接</code></p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/573419b77b1f2.png" alt="IMG_1406.PNG" /></p>
+<p><code>说明</code> - 给你的 VPN 连接信息起一个名字</p>
+<p><code>输入服务器地址</code> - 格式是 服务器地址: 端口 示例: <code>ac-us1.ssladder.com:1234</code></p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/57341caed1c06.png" alt="IMG_1416.PNG" /></p>
+<p>点保存，回到原来的界面，打开<code>AnyConnect VPN</code>的开关</p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/57341beb3cfbe.png" alt="IMG_1405.PNG" /></p>
+<p>如果你的设备与服务器通信正常，会提示身份认证</p>
+<p>请分别输入你的<code>用户名</code>和<code>密码</code></p>
+<p><code>用户名</code> SSLadder 用户中心的用户名 (见用户中心右上角) 将来可能改为 Shadowsocks 的端口号为用户名</p>
+<p><code>密码</code> - 和浏览器代理一样 输入 SSLadder 用户中心的登录密码</p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/573419d2c65ec.png" alt="UserName" /></p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/573419d2a8863.png" alt="Password" /></p>
+<p>正在连接...</p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/573419cf737d0.png" alt="IMG_1408.PNG" /></p>
+<p>如果用户名和密码正确无误 一会儿 你应该能够看到顶部多了个 &quot;VPN&quot; 的图标 详细信息也会显示已连接</p>
+<p><img src="https://ooo.0o0.ooo/2016/05/12/573419b7f29e3.png" alt="IMG_1412.PNG" /></p>
+<p>That's all!享受自由的互联网吧!</p>
+<p><em>Last Update: Thu May 12 2016 14:07:37 GMT+0800 (CST)</em>  <a href="/raw/how-to-use-ac.md">Source File</a></p>
 </div>
 <div class="row">
 <div id="disqus_thread"></div>
